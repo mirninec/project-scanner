@@ -25,16 +25,16 @@
 ## 📦 Установка
 1. Убедитесь, что у вас установлен **PowerShell 7+** ([инструкция](https://learn.microsoft.com/powershell/)).
 2. Склонируйте репозиторий:
-   ```bash
+```bash
    git clone https://github.com/mirninec/project-scanner.git
    cd project-scanner
 ````
 
 3. Сделайте файл исполняемым (Linux/macOS):
 
-   ```bash
+```bash
    chmod +x project_scanner.ps1
-   ```
+```
 
 ---
 
@@ -50,19 +50,19 @@
 
 * 🔹 Сканирование текущей директории:
 
-  ```powershell
+```powershell
   ./project_scanner.ps1
-  ```
+```
 * 🔹 Только дерево проекта:
 
-  ```powershell
+```powershell
   ./project_scanner.ps1 -TreeOnly
-  ```
+```
 * 🔹 Включить статистику и сохранить в `analysis.md`:
 
-  ```powershell
+```powershell
   ./project_scanner.ps1 -ShowStats -OutputFile analysis.md
-  ```
+```
 
 ---
 
@@ -78,11 +78,12 @@
 ---
 
 # СТРУКТУРА ПРОЕКТА
+```bs
 ├── src
 │   ├── index.ts
 │   └── utils.ts
 └── package.json
-
+```
 ---
 
 # СОДЕРЖИМОЕ ФАЙЛОВ
@@ -90,7 +91,7 @@
 ```typescript
 import { start } from "./utils";
 start();
-````
+```
 
 ```
 
